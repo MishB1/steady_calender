@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/intro/intro.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -6,13 +7,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Steady Calender',
       initialRoute: Intro.routeName,
-      routes: {
-        Splash.routeName: (context) => const Splash(),
-        Calpager.routeName: (context) => const Calpager(),
-         LoginOptions.routeName: (context) => const LoginOptions(),
+      routes: {        
         Intro.routeName: (context) => const Intro(),
+        //Splash.routeName: (context) => const Splash(),
+        //LoginOptions.routeName: (context) => const LoginOptions(),
+       // Calpager.routeName: (context) => const Calpager(),       
       },
     );
   }
