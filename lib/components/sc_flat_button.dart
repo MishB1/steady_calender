@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import '/config/styles.dart';
 
@@ -23,16 +21,10 @@ class SCFlatButton extends StatelessWidget {
             textStyle: TextStyle(
                 fontFamily: Styles.primaryFontRegular,
                 fontWeight: Styles.primaryFontWeightLight,
-                fontSize: Styles.primaryButtonFontSize
-            ),
+                fontSize: Styles.primaryButtonFontSize),
             shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(5.0)
-                )
-            )
-        ),
+                borderRadius: BorderRadius.all(Radius.circular(5.0)))),
         child: child,
-        onPressed: onTap
-    );
+        onPressed: onTap);
   }
 }
