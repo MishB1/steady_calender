@@ -18,7 +18,7 @@ class SCFlatButton extends StatelessWidget {
             primary: (backgroundColor ?? Styles.primaryHighlightColor),
             onPrimary: (textColor ?? Colors.white),
             elevation: 1,
-            textStyle: TextStyle(
+            textStyle:TextStyle(
                 fontFamily: Styles.primaryFontRegular,
                 fontWeight: Styles.primaryFontWeightLight,
                 fontSize: Styles.primaryButtonFontSize),
