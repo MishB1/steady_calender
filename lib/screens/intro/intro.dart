@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../components/sc_flat_button.dart';
+import '../login_options/login_options.dart';
 
 class Intro extends StatelessWidget {
   static const String routeName = '/intro';
@@ -19,6 +21,18 @@ class Intro extends StatelessWidget {
               alignment: Alignment.center ,
             )
           ),
+        ),
+        Positioned(
+          width: MediaQuery.of(context).size.width,
+          height: 60.0,
+          bottom: 50.0,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: SCFlatButton(const Text("Get Started"),
+                onTap: () =>
+                Navigator.pushNamed(context, LoginOptions.routeName)
+              )
+          )
         )
       ],
     );
